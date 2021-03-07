@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Ficha Cadastral</title>
+</head>
+
+<body>
+    <h1>Ficha Cadastral</h1>
+
+    <div class="row">
+        <label for="inputNome">Nome de Nascimento: </label>
+        <input id="inputNome" type="text" required>
+    </div>
+
+    <div class="row">
+        <label for="inputNasc">Qual a sua data de nascimento: </label>
+        <input id="inputNasc" type="date" required>
+    </div>
+
+    <div class="row">
+        <label for="inputAnos">Qual a sua idade: </label>
+        <input id="inputAnos" type="number" required>
+    </div>
+
+    <div class="row"></div>
+    <label for="inputDoenca">Tem alguma doença pré-existente: </label>
+    <select id="inputDoenca" name="doenca">
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+    </select>
+    </div>
+    <div class="row">
+        <label for="inputMedico">Tem acompanhamento médico: </label>
+        <select id="inputMedico" name="medico">
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+        </select>
+    </div>
+
+    <div class="container">
+        <button id="btnEnviar" onclick="enviar()">
+            Enviar
+        </button>
+    </div>
+    <img
+        src="https://drauziovarella.uol.com.br/wp-content/uploads/2020/03/202003_drauzio_coronavirus-bom-senso-fontes-confiaveis_thumb_1000x563.jpg">
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
